@@ -1,56 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body bgcolor="blue">
+    <title>Triangle Area</title>
     <style>
-        
-    .triArea{
-        width: 300px;
-        height: 300px;
-        border: 5px solid rgb(231, 57, 57);
-        border-radius: 20px;
-        background-color: rgba(144, 216, 78, 0.897);
-        padding: 50px;
-        margin-left: 450px;
-        
-        
-    }
-    .box1{
-        padding: 50px;
-        margin-left: 475px;
-    }
+        .TriArea {
+            width: 350px;
+            height: 400px;
+            border: 10px solid rgb(187, 2, 211);
+            border-radius: 20px;
+            background-color: rgb(247, 185, 255);
+            padding: 10px;
+            margin: auto;
+            font-family:initial;
+            box-shadow:6px 5px 20px rgb(187, 2, 211) ;
+        }
+        body{
+            background-color: rgb(243, 186, 238);
+        }
+        h1{
+            text-align: center;
+            color: rgb(219, 74, 122);
+            font-size: 40px;
+            text-shadow:2px 2px 4px rgb(219, 74, 122);
+        }
+        h2{
+            color: rgb(87, 18, 165);
+            text-shadow:2px 2px 4px rgb(87, 18, 165);
+        }
+        h3{
+            text-align: center;
+            color: rgb(128, 37, 212);
+            font-size: 60px;
+            text-shadow:5px 5px 10px rgb(145, 86, 201);   
+        }
+        hr{
+            box-shadow:5px 3px 5px #7440b9 ;
+        }
+        input{
+            background-color: rgb(250, 249, 189);
+            border-radius:20px;
+            height: 30px;
+            color: rgb(124, 15, 42);
+            font-size: 20px;
+            padding-left: 10px;
+            text-shadow:2px 2px 4px rgb(124, 15, 42);
+        }
+        p{
+            color: rgb(143, 21, 21);
+            font-size: 30px;
+            text-shadow:2px 2px 4px rgb(143, 21, 21);
+        }
+        .contener{
+            text-align: center;
+            margin: 20px;
+        }
+        .contener img{
+            width: 500px;
+            height: 500px;
+        }
     </style>
-    <div class="triArea">
-        <h1>Triangle Area</h1>
-        <img src="" alt="">
-        <hr> Base: <br>
+</head>
+<body>
+    <div>
+        <h3>&#127799; TRIANGLE AREA &#127799;</h3>
+    </div>
+    <div class="TriArea">
+        <h1>&#129408;Triangle Area&#129408;</h1>
+        <hr size="3px" noshade="" , color="#7440b9">
+        <h2>Base:</h2>
         <input type="text" name="" id="base" value="10">
-        <br> Height: <br>
+        <h2>Height:</h2>
         <input type="text" name="" id="height" value="10">
-        <br>
-        <p id ="result"></p>
+        <p id="result"></p>
         <script>
             let b = document.getElementById("base");
             let h = document.getElementById("height");
             let area = document.getElementById("result");
             b.addEventListener("input", triArea);
             h.addEventListener("input", triArea);
-            function triArea() {
+            function triArea(){
                 let base = parseFloat(b.value);
                 let height = parseFloat(h.value);
-                area.innerHTML = `The triangle area is ${(0.5*base*height).toFixed(2)}.`
+                area.innerHTML = `The triangle area is ${(0.5 * base * height).toFixed(2)}.`
             }
         </script>
-        
-        </div>
-        <div class="box1">
-        <img src="https://static.trueplookpanya.com/tppy/member/m_557500_560000/559384/cms/images/02%20%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B.jpg"
-        width="250" height="250">
+    </div>
+    <div class="contener">
+        <center><img src="https://scontent.fbkk9-2.fna.fbcdn.net/v/t1.6435-9/127599503_2768648180056298_5932460191256672416_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=174925&_nc_ohc=_KapB5KxjyQAX_MnsSs&_nc_ht=scontent.fbkk9-2.fna&oh=109ef37ef6555d7bc01d962dc4fef6ff&oe=60C465D7" alt="Arm" width="500" height="500"></center> 
     </div>
 </body>
 </html>
